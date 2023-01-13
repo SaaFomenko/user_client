@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5.0)
+project(leaver)
+set(SOURCE_EXE main.cpp)
+set(SOURCE_LIB leaver.h leaver.cpp)
+add_library(greeter STATIC ${SOURCE_LIB})
+add_executable(greeter.exe ${SOURCE_EXE})
+target_link_libraries(greeter.exe greeter)
