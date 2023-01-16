@@ -7,5 +7,9 @@
 int main()
 {
 	const std::string request = "Введите имя: ";
+	Leaver bay;
+
+	user_dialog(request, bay);
+
 	return 0;
 }
